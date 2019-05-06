@@ -97,7 +97,7 @@ registerBlockType( 'jsadvancers/data-visualisation', {
 					data-chart-type={ chartType }
 					data-chart-colors={ classnames( color1, color2, color3, color4, color5 ) }
 				>
-					Check the Console :)
+					Saving Values to the Dataset
 				</div>
 			</Fragment>
 		);
@@ -113,7 +113,7 @@ registerBlockType( 'jsadvancers/data-visualisation', {
 				data-chart-type={ chartType }
 				data-chart-colors={ classnames( color1, color2, color3, color4, color5 ) }
 			>
-				Go to the Editor and check the Console :)
+				Get the Values via the Dataset
 			</div>
 		);
 	},
