@@ -16,12 +16,9 @@ const chartTypes = {
 	line: 'line',
 	area: 'area',
 	bar: 'bar',
-	pie: 'pie',
-	donut: 'donut',
 	scatter: 'scatter',
 	bubble: 'bubble',
 	heatmap: 'heatmap',
-	radialBar: 'radialBar',
 };
 
 const chartTypeOptions = Object.keys( chartTypes ).map( ( key ) => {
