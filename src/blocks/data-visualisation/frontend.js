@@ -10,13 +10,13 @@ import domReady from '@wordpress/dom-ready';
 import { render } from '@wordpress/element';
 
 domReady( () => {
-	const blocks = document.querySelectorAll(
-		'.wp-block-jsadvancers-data-visualisation'
-	);
+	// get all the instances of the Block on the Page
 
-	blocks.forEach( ( block ) => {
-		const chartType = block.dataset.chartType;
-		const chartColors = block.dataset.chartColors.split( ' ' );
+	// Loop over the blocks to get each one () => {
+
+		// get the Chart Type from the dataset
+
+		// get the chartColors from the Dataset
 
 		const options = {
 			chart: {
@@ -27,7 +27,7 @@ domReady( () => {
 					enabled: false,
 				},
 			},
-			colors: chartColors,
+			colors: /* set Chart Colors Here */,
 			stroke: {
 				curve: 'smooth',
 			},
@@ -61,15 +61,18 @@ domReady( () => {
 				data: [ 11, 32, 45, 32, 34, 52, 41 ],
 			},
 		];
-		render(
+		
+		const component = () => (
 			<Chart
-				options={ options }
-				series={ series }
-				type={ chartType }
-				width={ 500 }
-				height={ 320 }
-			/>,
-			block
-		);
+				options={options}
+				series={series}
+				type={ /* Set Chart Type here */ }
+				width={500}
+				height={320}
+			/>
+		)
+		
+		
+		// Render the component on top of the block
 	} );
 } );
